@@ -265,7 +265,9 @@ public class InventorySetupsPlugin extends Plugin
 		@Override
 		public void hotkeyPressed()
 		{
-			panel.returnToOverviewPanel(false);
+			panel.setSearchBarText("");
+			panel.redrawOverviewPanel(false);
+			panel.requestFocusToSearchBar();
 		}
 	};
 
